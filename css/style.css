@@ -16,7 +16,8 @@ RESET
 DEBUG
 *********
 */
-.debug header {
+
+.debug .header-top {
     background-color: #a0d0e0;
     height: 70px;
     width: 100%;
@@ -30,14 +31,29 @@ DEBUG
     background-color: #ce9408;
     border: 2px dashed black;
     height: auto;
-
-    
-}
+    }
 
 .debug .menu div:nth-child(2) {
     border-right: dashed  black 2px;
     border-left: dashed  black 2px;
     padding: 8px 200px;
+}
+
+.debug .header-bottom {
+    background-color: #00007a;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.debug .container {
+    width: 800px;
+    background-color: #e268ed;
+    border: 2px dashed black;
+    height: 400px;
+
 }
 
 /* 
@@ -46,7 +62,11 @@ HEADER
 *********
 */
 
-header {
+.header-top {
+    display: flex;
+}
+
+.header-bottom {
     display: flex;
 }
 
@@ -59,3 +79,7 @@ header {
 
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+}
