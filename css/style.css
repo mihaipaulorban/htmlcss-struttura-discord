@@ -48,12 +48,97 @@ DEBUG
 
 }
 
-.debug .container {
+.debug .container-header {
     width: 800px;
     background-color: #e268ed;
     border: 2px dashed black;
     height: 400px;
 
+}
+
+.debug .container, .container-reverse{
+    width: 800px;
+    border: 2px dashed black;
+    height: 400px;
+
+}
+
+.debug .sezione {
+    background-color: #ffffff;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.debug .container div:first-child {
+    background-color: #1f7cff;
+    width: 60%;
+    
+}
+
+.debug .container div:last-child {
+    background-color: #fab0c0;
+    width: 40%;
+    border-left: dashed black 2px;
+}
+
+.debug .sezione-2 {
+    background-color: #c9c9c9;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.debug .container-reverse {
+    width: 800px;
+    border: 2px dashed black;
+    height: 400px;
+    display: flex; 
+    flex-direction: row-reverse; 
+}
+
+.debug .container-reverse div:first-child {
+    background-color: #1f7cff;
+    width: 60%;
+}
+
+.debug .container-reverse div:last-child {
+    background-color: #fab0c0;
+    width: 40%;
+}
+
+
+.debug .sezione-3 {
+    background-color: #c9c9c9;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.debug .container-large {
+    background-color: #277b12;
+    width: 800px;
+    border: 2px dashed black;
+    height: 700px;
+    display: flex; 
+    flex-direction: row-reverse; 
+}
+
+/* 
+*********
+COMMON
+*********
+*/
+
+.header-top,.header-bottom,.sezione,.container,.sezione-2 {
+    display: flex;
 }
 
 /* 
@@ -62,13 +147,7 @@ HEADER
 *********
 */
 
-.header-top {
-    display: flex;
-}
 
-.header-bottom {
-    display: flex;
-}
 
 .menu {
     display: flex;
@@ -83,3 +162,10 @@ header {
     display: flex;
     flex-direction: column;
 }
+
+/* 
+*********
+MAIN
+*********
+*/
+
